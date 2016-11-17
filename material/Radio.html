@@ -1,0 +1,42 @@
+﻿<div radio controller="app.components.material.Radio" unselectable>
+    <style component="css-helpers"></style>
+    <style component="css-material-icons"></style>
+    <style>
+        [radio] {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        [radio-unchecked-icon] {
+            position: absolute;
+            float: left;
+            top: 0;
+            left: 0;
+            font-size: 20px;
+        }
+
+        [radio-checked-icon] {
+            position: absolute;
+            float: left;
+            top: 8px;
+            left: 6px;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+        }
+
+        [radio-label] {
+            padding-left: 30px;
+            color: #5b5b5b;
+            font-size: 15px;
+        }
+
+        [radio] .scale-zero {
+            transform: scale(0,0) !important;
+        }
+    </style>
+    <i radio-unchecked-icon tag="unchecked-icon" class="material-icons hide">&#xE836;</i>
+    <i radio-checked-icon tag="checked-icon" class="hide"></i>
+    <div radio-label tag="label"></div>
+</div>
